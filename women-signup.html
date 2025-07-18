@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artical 3</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .women-signup {
+        background: url(/assets/img/women-signup.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .women-signup-form {
+        width: 450px;
+        padding: 10px 20px 30px 20px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        border-radius: 0.5rem;
+        background-color: #84658e;
+        mix-blend-mode: multiply;
+        color: white;
+        /* Match the border radius of the form */
+      }
+
+      .women-signup-form::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .women-signup .women-signup-form input {
+        background: #b09dbb;
+        border: none;
+        border-radius: 15px;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.873rem !important;
+        font-weight: 400 !important;
+      }
+
+      .password-container {
+        position: relative;
+      }
+
+      .password-input {
+        padding-right: 30px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .password-toggle {
+        position: absolute;
+        top: 52%;
+        left: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #999;
+      }
+
+      .password-toggle:hover {
+        color: #333;
+      }
+      .pink-txtcolor {
+        color: #b09dbb;
+      }
+
+      .pink-bg {
+        background: #b09dbb !important;
+      }
+
+      .pink-bg:hover {
+        background: #b09dbb;
+      }
+
+      .women-signup-form label {
+        font-family: "Nunito", sans-serif;
+        font-size: 0.873rem !important;
+        font-weight: 400 !important;
+      }
+
+      @media (width: 1920px) {
+        .women-signup {
+          display: flex;
+          height: 100vh;
+        }
+      }
+
+      @media (width: 1707.5px) {
+        .women-signup {
+          display: flex;
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 1821.33px) {
+        .women-signup {
+          display: flex;
+          height: 100vh;
+        }
+      }
+
+      @media (width: 1440px) {
+        .women-signup {
+          display: flex;
+          height: 100vh;
+        }
+      }
+
+      .summit-first {
+        font-family: "Arial Bold", sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        text-transform: capitalize;
+      }
+
+      .btn {
+        font-family: "Nunito", sans-serif;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+      }
+
+      .subheading {
+        font-family: "Nunito", sans-serif;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+      }
+
+      .form-control:focus {
+        box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.25) !important;
+        background: #fff !important;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="women-signup">
+      <div
+        class="container d-flex align-items-center justify-content-center py-5"
+      >
+        <div class="women-signup-form shadow rounded-4 text-center">
+          <div class="mb-4">
+            <img
+              src="dasheets/img/Summit Logo women.png"
+              alt=""
+              class="img-fluid w-100 logo"
+              style="max-width: 90% !important"
+            />
+            <h2 class="fs-4 mt-3 pink-txtcolor summit-first">
+              DISCOVER MORE ABOUT THE <br class="d-none d-md-block" />
+              <span class="fs-3">WOMEN'S SUMMIT FIRST</span>
+            </h2>
+          </div>
+
+          <form
+            class="signup-input mt-3"
+            action="https://blkwealthconnect.com/register/summit-submit"
+            method="post"
+          >
+            <input
+              type="hidden"
+              name="_token"
+              value="cnjCiWIgrd87JrJt9Opik0TGWX3ZCCqsJqSPmp7P"
+            />
+            <div class="form-group text-start">
+              <label
+                for="exampleFormControlSelect1"
+                class="mb-1 fw-bold subheading pink-txtcolor"
+                >Your Full Name *</label
+              >
+              <div class="password-container">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="form-control subheading mt-1 py-3 ps-5"
+                  id="exampleFormControlInput1"
+                  name="first_name"
+                  required=""
+                />
+                <input
+                  type="hidden"
+                  name="type"
+                  value="WOMEN’S SUMMIT"
+                  required=""
+                />
+                <i
+                  class="bi bi-person password-toggle fw-bold fs-4 text-dark"
+                ></i>
+              </div>
+              <div class="password-container mt-3">
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="form-control subheading mt-1 py-3 ps-5"
+                  id="exampleFormControlInput1"
+                  name="last_name"
+                  required=""
+                />
+                <i
+                  class="bi bi-person password-toggle fw-bold fs-4 text-dark"
+                ></i>
+              </div>
+            </div>
+            <div class="form-group text-start mt-3">
+              <label
+                for="exampleFormControlSelect1"
+                class="mb-1 fw-bold subheading pink-txtcolor"
+                >Email Address *</label
+              >
+              <div class="password-container">
+                <input
+                  type="email"
+                  placeholder="Exyourname@company.com"
+                  class="form-control subheading mt-1 py-3 ps-5"
+                  id="exampleFormControlInput1"
+                  name="email"
+                  required=""
+                />
+                <i
+                  class="bi bi-envelope password-toggle fw-bold fs-5 text-dark"
+                ></i>
+              </div>
+            </div>
+            <button class="btn pink-bg py-3 w-100 mt-4 rounded-4">
+              <span class="fs-6 fw-bold" type="submit">GET EARLY ACCESS</span>
+            </button>
+            <p class="pink-txtcolor m-0 mt-3 headingn fs-6">
+              By signing up, you agree to receive marketing
+              <br class="d-none d-md-block" />messages to the email provided.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
