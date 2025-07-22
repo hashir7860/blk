@@ -122,7 +122,7 @@
     <!-- Hero section -->
     <section
       id="hero"
-      class="hero d-flex align-items-center justify-content-center text-center position-relative"
+      class="hero d-flex align-items-center justify-content-center text-center position-relative mt-5"
     >
       <!-- Video Background Container -->
       <div class="video-background">
@@ -141,6 +141,24 @@
           BLACK WEALTH CONNECT WOMEN’S <br class="d-none d-md-block" />
           SUMMIT 2025
         </h3>
+        <div id="countdown" class="countdown-timer">
+          <div class="time-box text-white">
+            <span id="days" class="time-value">00</span>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="time-box text-white">
+            <span id="hours" class="time-value">00</span>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="time-box text-white">
+            <span id="minutes" class="time-value">00</span>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="time-box text-white">
+            <span id="seconds" class="time-value">00</span>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
         <a href="#" class="text-decoration-none reserve-btn mt-3"
           >RESERVE YOUR SPOT</a
         >
@@ -151,8 +169,8 @@
     <!-- podcast section -->
     <section class="my-5">
       <div class="container">
-        <div class="text-center">
-          <h4 class="heading">PODCAST EPISODE</h4>
+        <div class="text-center my-5">
+          <h4 class="heading mt-3">PODCAST EPISODE</h4>
         </div>
         <div class="row">
           <div class="col-md-4 mt-3 bg-hover-green">
@@ -165,6 +183,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen=""
+                loading="lazy"
                 class="w-100"
               ></iframe>
             </div>
@@ -182,6 +201,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen=""
+                loading="lazy"
                 class="w-100"
               ></iframe>
             </div>
@@ -199,6 +219,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen=""
+                loading="lazy"
                 class="w-100"
               ></iframe>
             </div>
@@ -288,7 +309,7 @@
     <!-- Bwc store -->
     <section class="my-5">
       <div class="container">
-        <div class="text-center">
+        <div class="text-center my-5">
           <h4 class="heading">BWC STORE</h4>
         </div>
         <div class="row mt-4">
@@ -559,5 +580,57 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const STORAGE_KEY = "countdownTargetDate";
+
+      function getOrSetTargetDate() {
+        let storedDate = localStorage.getItem(STORAGE_KEY);
+        if (storedDate) {
+          return new Date(storedDate);
+        } else {
+          const newTarget = new Date();
+          newTarget.setDate(newTarget.getDate() + 48);
+          localStorage.setItem(STORAGE_KEY, newTarget.toISOString());
+          return newTarget;
+        }
+      }
+
+      const targetDate = getOrSetTargetDate();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+          document.getElementById("countdown").innerHTML = "<h4>Launched!</h4>";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((distance / (1000 * 60)) % 60);
+        const seconds = Math.floor((distance / 1000) % 60);
+
+        document.getElementById("days").innerText = String(days).padStart(
+          2,
+          "0"
+        );
+        document.getElementById("hours").innerText = String(hours).padStart(
+          2,
+          "0"
+        );
+        document.getElementById("minutes").innerText = String(minutes).padStart(
+          2,
+          "0"
+        );
+        document.getElementById("seconds").innerText = String(seconds).padStart(
+          2,
+          "0"
+        );
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    </script>
   </body>
 </html>
