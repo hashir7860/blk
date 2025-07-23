@@ -10,19 +10,31 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
   </head>
   <body>
     <header class="home-header">
@@ -30,16 +42,43 @@
         class="container-fluid navbar fixed-top navbar-expand-lg py-3 px-0 px-lg-5"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand align-items-center" href="index.html">
             <img
               src="assets/img/logo.svg"
               alt="Logo"
-              class="img-fluid d-block"
-              width="200"
+              class="img-fluid d-block logo"
+              width="150"
             />
           </a>
+          <ul class="gap-0 navbar-nav d-flex align-items-center d-lg-none list-unstyled" style="flex-direction: row;">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fab fa-linkedin-in fs-4"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-youtube fs-4" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+                ><i class="ti-shopping-cart-full"></i
+              ></a>
+            </li>
+          </ul>
           <button
-            class="navbar-toggler bg-white"
+            class="navbar-toggler p-0 border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -74,7 +113,7 @@
             <ul
               class="navbar-nav ms-auto d-flex align-items-start align-items-lg-center"
             >
-              <li class="nav-item d-lg-none d-block">
+              <!-- <li class="nav-item d-lg-none d-block">
                 <a class="nav-link" href="index.html">PODCAST</a>
               </li>
               <li class="nav-item d-block d-lg-none">
@@ -91,7 +130,7 @@
               </li>
               <li class="nav-item d-block d-lg-none">
                 <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#"
                   ><i class="bi bi-instagram fs-4"></i
@@ -103,13 +142,18 @@
                 ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fab fa-youtube fs-4"></i
-                ></a>
+                <a class="nav-link" href="#">
+                  <i class="fa fa-youtube fs-4" aria-hidden="true"></i>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fas fa-cart-plus fs-4"></i
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasScrolling"
+                  aria-controls="offcanvasScrolling"
+                  ><i class="ti-shopping-cart-full"></i
                 ></a>
               </li>
             </ul>
@@ -573,6 +617,67 @@
       </div>
     </div>
     <!-- End men modal -->
+
+    <!-- cart offcanvas start -->
+    <div
+      class="offcanvas offcanvas-end p-4"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header position-relative">
+        <!-- <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button> -->
+        <a
+          class="cart-close px-3 py-2"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          href="#"
+          ><i class="bi bi-x-lg text-white"></i
+        ></a>
+      </div>
+      <div class="offcanvas-body pt-5">
+        <div class="cart-content mt-5">
+          <ul>
+            <li>
+              <div class="cart-img">
+                <a href="#"><img src="assets/img/BWC !.jpg" alt="" /></a>
+              </div>
+              <div class="cart-title">
+                <h4 class="heading">
+                  <a href="#" class="text-decoration-none"
+                    >BLACK AND GREEN BWC HOODIE</a
+                  >
+                  (S)
+                </h4>
+                <span> 1 × 80 </span>
+              </div>
+              <div class="cart-delete">
+                <a href="javascript:void(0)" onclick='removeCartItem("uId1")'
+                  ><i class="bi bi-trash"></i
+                ></a>
+              </div>
+            </li>
+          </ul>
+          <div class="cart-total">
+            <h4>Subtotal: <span>$80</span></h4>
+          </div>
+          <div class="cart-btn btn-hover">
+            <a class="theme-color text-decoration-none" href="#">view cart</a>
+          </div>
+          <div class="checkout-btn btn-hover">
+            <a class="theme-color text-decoration-none" href="#">checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cart offcanvas end -->
     <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
