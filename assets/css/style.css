@@ -757,3 +757,13 @@ body {
   transition: all 250ms ease-out;
   background-color: black;
 }
+
+.cart-offcanvas{
+  width: 100%;
+}
+
+@media(max-width: 576px){
+  .cart-offcanvas{
+    width: 20rem;
+  }
+}
