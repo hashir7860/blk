@@ -1,796 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <!-- <link ok
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     /> -->
-    <!-- <link
+  <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- <link rel="stylesheet" href="assets/css/themify-icons.css" /> -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.min.css">
-  </head>
-  <body>
-    <header class="home-header">
-      <nav
-        class="container-fluid navbar fixed-top navbar-expand-lg py-3 px-0 px-lg-5"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand align-items-center" href="index.html">
-            <img
-              src="assets/img/logo.svg"
-              alt="Logo"
-              class="img-fluid d-block logo"
-              width="150"
-            />
-          </a>
-          <ul
-            class="gap-0 navbar-nav d-flex align-items-center d-lg-none list-unstyled"
-            style="flex-direction: row"
-          >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="assets/css/themify-icons.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.min.css">
+</head>
+
+<body>
+  <header class="home-header">
+    <nav class="container-fluid navbar fixed-top navbar-expand-lg py-3 px-0 px-lg-5">
+      <div class="container-fluid">
+        <a class="navbar-brand align-items-center" href="index.html">
+          <img src="assets/img/logo.svg" alt="Logo" class="img-fluid d-block logo" width="150" />
+        </a>
+        <ul class="gap-0 navbar-nav d-flex align-items-center d-lg-none list-unstyled" style="flex-direction: row">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-instagram fs-4"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-linkedin-in fs-4"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-youtube fs-4" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"><i class="ti-shopping-cart-full fs-4"></i></a>
+          </li>
+        </ul>
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto d-none d-lg-flex">
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="bi bi-instagram fs-4"></i
-              ></a>
+              <a class="nav-link" href="index.html">PODCAST</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fab fa-linkedin-in fs-4"></i
-              ></a>
+              <a class="nav-link" href="events.html">EVENTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="store.html">STORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto d-flex align-items-start align-items-lg-center">
+            <li class="nav-item d-lg-none d-block">
+              <a class="nav-link" href="index.html">PODCAST</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="store.html">STORE</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item d-none d-lg-block p-0">
+              <a class="nav-link p-0" href="#"><i class="bi bi-instagram fs-4"></i></a>
+            </li>
+            <li class="nav-item d-none d-lg-block p-0">
+              <a class="nav-link p-0" href="#"><i class="fab fa-linkedin-in fs-4"></i></a>
+            </li>
+            <li class="nav-item d-none d-lg-block p-0">
+              <a class="nav-link p-0" href="#">
                 <i class="fa fa-youtube fs-4" aria-hidden="true"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasScrolling"
-                aria-controls="offcanvasScrolling"
-                ><i class="ti-shopping-cart-full fs-4"></i
-              ></a>
+            <li class="nav-item d-none d-lg-block p-0">
+              <a class="nav-link p-0" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"><i class="ti-shopping-cart-full fs-4"></i></a>
             </li>
           </ul>
-          <button
-            class="navbar-toggler p-0 border-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling2"
-            aria-controls="offcanvasScrolling"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto d-none d-lg-flex">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">PODCAST</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">EVENTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="store.html">STORE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
-            </ul>
-            <ul
-              class="navbar-nav ms-auto d-flex align-items-start align-items-lg-center"
-            >
-              <li class="nav-item d-lg-none d-block">
-                <a class="nav-link" href="index.html">PODCAST</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="events.html">EVENTS</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="store.html">STORE</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
-              <li class="nav-item d-none d-lg-block p-0">
-                <a class="nav-link p-0" href="#"
-                  ><i class="bi bi-instagram fs-4"></i
-                ></a>
-              </li>
-              <li class="nav-item d-none d-lg-block p-0">
-                <a class="nav-link p-0" href="#"
-                  ><i class="fab fa-linkedin-in fs-4"></i
-                ></a>
-              </li>
-              <li class="nav-item d-none d-lg-block p-0">
-                <a class="nav-link p-0" href="#">
-                  <i class="fa fa-youtube fs-4" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="nav-item d-none d-lg-block p-0">
-                <a
-                  class="nav-link p-0"
-                  href="#"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasScrolling"
-                  aria-controls="offcanvasScrolling"
-                  ><i class="ti-shopping-cart-full fs-4"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- End header section -->
-
-    <!-- Hero section -->
-    <section
-      id="hero"
-      class="hero d-flex align-items-center justify-content-center text-center position-relative mt-5"
-    >
-      <!-- Video Background Container -->
-      <div class="video-background">
-        <video autoplay loop muted>
-          <source src="assets/img/Main_Reel_1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <!-- Dark Overlay for Better Readability -->
-      <div class="video-overlay"></div>
-
-      <!-- Hero Content -->
-      <div class="container">
-        <h3 class="text-white hero-heading">
-          JOIN US AT THE <br class="d-none d-md-block" />
-          BLACK WEALTH CONNECT WOMEN’S <br class="d-none d-md-block" />
-          SUMMIT 2025
-        </h3>
-        <div id="countdown" class="countdown-timer">
-          <div class="time-box text-white">
-            <span id="days" class="time-value">00</span>
-            <div class="time-label">Days</div>
-          </div>
-          <div class="time-box text-white">
-            <span id="hours" class="time-value">00</span>
-            <div class="time-label">Hours</div>
-          </div>
-          <div class="time-box text-white">
-            <span id="minutes" class="time-value">00</span>
-            <div class="time-label">Minutes</div>
-          </div>
-          <div class="time-box text-white">
-            <span id="seconds" class="time-value">00</span>
-            <div class="time-label">Seconds</div>
-          </div>
-        </div>
-        <a href="#" class="text-decoration-none reserve-btn mt-3"
-          >RESERVE YOUR SPOT</a
-        >
-      </div>
-    </section>
-    <!-- End hero section -->
-
-    <!-- podcast section -->
-    <section class="my-5">
-      <div class="container">
-        <div class="text-center my-5">
-          <h4 class="heading mt-3">PODCAST EPISODE</h4>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mt-3 bg-hover-green">
-            <div>
-              <iframe
-                width="100%"
-                height="230"
-                src="https://www.youtube.com/embed/3MEqHyT3f_o?si=2DD-Tq_kd82W8ntC"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen=""
-                loading="lazy"
-                class="w-100"
-              ></iframe>
-            </div>
-            <p class="subdescription video-lable text-center py-1 m-0">
-              FROM CLIPPERS TO CASHFLOW
-            </p>
-          </div>
-          <div class="col-md-4 mt-3 bg-hover-green">
-            <div>
-              <iframe
-                width="100%"
-                height="230"
-                src="https://www.youtube.com/embed/3MEqHyT3f_o?si=2DD-Tq_kd82W8ntC"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen=""
-                loading="lazy"
-                class="w-100"
-              ></iframe>
-            </div>
-            <p class="subdescription video-lable text-center py-1 m-0">
-              FROM CLIPPERS TO CASHFLOW
-            </p>
-          </div>
-          <div class="col-md-4 mt-3 bg-hover-green">
-            <div>
-              <iframe
-                width="100%"
-                height="230"
-                src="https://www.youtube.com/embed/3MEqHyT3f_o?si=2DD-Tq_kd82W8ntC"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen=""
-                loading="lazy"
-                class="w-100"
-              ></iframe>
-            </div>
-            <p class="subdescription video-lable text-center py-1">
-              FROM CLIPPERS TO CASHFLOW
-            </p>
-          </div>
         </div>
       </div>
-    </section>
-    <!-- end podcast section -->
+    </nav>
+  </header>
+  <!-- End header section -->
 
-    <!-- latest news section -->
-    <section class="my-5">
-      <div class="container">
-        <div class="text-center">
-          <h4 class="heading">LATEST NEWS</h4>
+  <!-- Hero section -->
+  <section id="hero" class="hero d-flex align-items-center justify-content-center text-center position-relative mt-5">
+    <!-- Video Background Container -->
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="assets/img/Main_Reel_1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- Dark Overlay for Better Readability -->
+    <div class="video-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="container">
+      <h3 class="text-white hero-heading">
+        JOIN US AT THE <br class="d-none d-md-block" />
+        BLACK WEALTH CONNECT WOMEN’S <br class="d-none d-md-block" />
+        SUMMIT 2025
+      </h3>
+      <div id="countdown" class="countdown-timer">
+        <div class="time-box text-white">
+          <span id="days" class="time-value">00</span>
+          <div class="time-label">Days</div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-4 mt-3">
-            <div class="blog-wrap">
-              <div class="blog-img-date-wrap">
-                <div class="blog-img">
-                  <a href="#"><img src="assets/img/Resize-2.jpg" alt="" /></a>
-                </div>
+        <div class="time-box text-white">
+          <span id="hours" class="time-value">00</span>
+          <div class="time-label">Hours</div>
+        </div>
+        <div class="time-box text-white">
+          <span id="minutes" class="time-value">00</span>
+          <div class="time-label">Minutes</div>
+        </div>
+        <div class="time-box text-white">
+          <span id="seconds" class="time-value">00</span>
+          <div class="time-label">Seconds</div>
+        </div>
+      </div>
+      <a href="#" class="text-decoration-none reserve-btn mt-3">RESERVE YOUR SPOT</a>
+    </div>
+  </section>
+  <!-- End hero section -->
+
+  <!-- podcast section -->
+  <section class="my-5">
+    <div class="container">
+      <div class="text-center my-5">
+        <h4 class="heading mt-3">PODCAST EPISODE</h4>
+      </div>
+      <div class="row">
+        <div class="col-md-4 px-1 mt-3">
+          <div class="card border-0 bg-hover-green rounded-0 h-100">
+            <div class="card-body p-1">
+              <div>
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/3MEqHyT3f_o?si=2DD-Tq_kd82W8ntC"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen="" loading="lazy" class="w-100"></iframe>
               </div>
-              <div class="blog-content">
-                <p class="text-secondary m-0 mt-3">Published: July 2025</p>
-                <h3>
-                  <a href="#" class="text-decoration-none"
-                    >Black Wealth Connect Summit 2025</a
-                  >
-                </h3>
-                <div class="blog-btn">
-                  <a href="#" class="text-dark description">Read More</a>
-                </div>
+              <p class="subdescription video-lable text-center py-1 m-0 rounded-1">
+                FROM CLIPPERS TO CASHFLOW
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 px-1 mt-3">
+          <div class="card border-0 bg-hover-green rounded-0 h-100">
+            <div class="card-body p-1">
+              <div>
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/gXc9WH5yEZQ"
+                  title="BUILDING A PROPERTY PORTFOLIO AND MY LEARNINGS  -  S2 EP 7 FT GILLEAN OPOKU" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <p class="subdescription video-lable text-center py-1 m-0 rounded-1">
+                FROM CLIPPERS TO CASHFLOW
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 px-1 mt-3">
+          <div class="card border-0 bg-hover-green rounded-0 h-100">
+            <div class="card-body p-1">
+              <div>
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/7ub9uPBnq98"
+                  title="FROM VISION TO EXECUTION IN BUSINESS  -  S2 EP 6 FT ADE TOKUNBOH" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <p class="subdescription video-lable text-center py-1 m-0 rounded-1">
+                FROM CLIPPERS TO CASHFLOW
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-4 mt-3 bg-hover-green">
+          <div>
+            <iframe width="100%" height="230" src="https://www.youtube.com/embed/3MEqHyT3f_o?si=2DD-Tq_kd82W8ntC"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen="" loading="lazy" class="w-100"></iframe>
+          </div>
+          <p class="subdescription video-lable text-center py-1 m-0">
+            FROM CLIPPERS TO CASHFLOW
+          </p>
+        </div>
+        <div class="col-md-4 mt-3 bg-hover-green">
+          <div>
+            <iframe width="100%" height="230" src="https://www.youtube.com/embed/3MEqHyT3f_o?si=2DD-Tq_kd82W8ntC"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen="" loading="lazy" class="w-100"></iframe>
+          </div>
+          <p class="subdescription video-lable text-center py-1">
+            FROM CLIPPERS TO CASHFLOW
+          </p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- end podcast section -->
+
+  <!-- latest news section -->
+  <section class="my-5">
+    <div class="container">
+      <div class="text-center">
+        <h4 class="heading">LATEST NEWS</h4>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 mt-3">
+          <div class="blog-wrap">
+            <div class="blog-img-date-wrap">
+              <div class="blog-img">
+                <a href="#"><img src="assets/img/Resize-2.jpg" alt="" /></a>
+              </div>
+            </div>
+            <div class="blog-content">
+              <p class="text-secondary m-0 mt-3">Published: July 2025</p>
+              <h3>
+                <a href="#" class="text-decoration-none">Black Wealth Connect Summit 2025</a>
+              </h3>
+              <div class="blog-btn">
+                <a href="#" class="text-dark description">Read More</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mt-3">
-            <div class="blog-wrap">
-              <div class="blog-img-date-wrap">
-                <div class="blog-img">
-                  <a href="#"
-                    ><img src="assets/img/Resize-1 (1).jpg" alt=""
-                  /></a>
-                </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="blog-wrap">
+            <div class="blog-img-date-wrap">
+              <div class="blog-img">
+                <a href="#"><img src="assets/img/Resize-1 (1).jpg" alt="" /></a>
               </div>
-              <div class="blog-content">
-                <p class="text-secondary m-0 mt-3">Published: April 2025</p>
-                <h3>
-                  <a href="#" class="text-decoration-none"
-                    >Black Wealth Connect Women’s Summit 2025</a
-                  >
-                </h3>
-                <div class="blog-btn">
-                  <a href="#" class="text-dark description">Read More</a>
-                </div>
+            </div>
+            <div class="blog-content">
+              <p class="text-secondary m-0 mt-3">Published: April 2025</p>
+              <h3>
+                <a href="#" class="text-decoration-none">Black Wealth Connect Women’s Summit 2025</a>
+              </h3>
+              <div class="blog-btn">
+                <a href="#" class="text-dark description">Read More</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mt-3">
-            <div class="blog-wrap">
-              <div class="blog-img-date-wrap">
-                <div class="blog-img">
-                  <a href="#"><img src="assets/img/Resize-3.jpg" alt="" /></a>
-                </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="blog-wrap">
+            <div class="blog-img-date-wrap">
+              <div class="blog-img">
+                <a href="#"><img src="assets/img/Resize-3.jpg" alt="" /></a>
               </div>
-              <div class="blog-content">
-                <p class="text-secondary m-0 mt-3">Published: April 2025</p>
-                <h3>
-                  <a href="#" class="text-decoration-none"
-                    >Black Wealth Connect Podcast Season 3</a
-                  >
-                </h3>
-                <div class="blog-btn">
-                  <a href="#" class="text-dark description">Read More</a>
-                </div>
+            </div>
+            <div class="blog-content">
+              <p class="text-secondary m-0 mt-3">Published: April 2025</p>
+              <h3>
+                <a href="#" class="text-decoration-none">Black Wealth Connect Podcast Season 3</a>
+              </h3>
+              <div class="blog-btn">
+                <a href="#" class="text-dark description">Read More</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end podcast section -->
+    </div>
+  </section>
+  <!-- end podcast section -->
 
-    <!-- Bwc store -->
-    <section class="my-5">
-      <div class="container">
-        <div class="text-center my-5">
-          <h4 class="heading">BWC STORE</h4>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-4 mt-3">
-            <div
-              class="product-wrap mb-35 product-box"
-              data-bs-target="#exampleModalToggle"
-              data-bs-toggle="modal"
-            >
-              <div class="product-img img-zoom mb-25">
+  <!-- Bwc store -->
+  <section class="my-5">
+    <div class="container">
+      <div class="text-center my-5">
+        <h4 class="heading">BWC STORE</h4>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 mt-3">
+          <div class="product-wrap mb-35 product-box" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+            <div class="product-img img-zoom mb-25">
+              <a href="#" class="text-decoration-none">
                 <img src="assets/img/BWC 2.jpg" class="img-fluid" alt="" />
                 <div class="product-action-wrap d-none d-sm-none d-md-block">
                   <button class="product-action-btn-1">
                     <i class="bi bi-eye"></i>
                   </button>
                 </div>
-              </div>
-              <div class="product-content pt-3 fw-bold">
-                <h3>
-                  <a
-                    href="#"
-                    class="text-decoration-none text-dark fw-bold"
-                    data-bs-toggle="modal"
-                    data-bs-target="#t-shirt"
-                    >BLACK AND GREEN BWC TEE</a
-                  >
-                </h3>
-                <div class="product-price">
-                  <span class="new-price">$30.00 AUD </span>
-                </div>
+              </a>
+            </div>
+            <div class="product-content pt-3 fw-bold">
+              <h3>
+                <a href="#" class="text-decoration-none text-dark fw-bold" data-bs-toggle="modal"
+                  data-bs-target="#t-shirt">BLACK AND GREEN BWC TEE</a>
+              </h3>
+              <div class="product-price">
+                <span class="new-price">$30.00 AUD </span>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mt-3">
-            <div
-              class="product-wrap mb-35 product-box"
-              data-bs-target="#exampleModalToggle"
-              data-bs-toggle="modal"
-            >
-              <div class="product-img img-zoom mb-25">
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="product-wrap mb-35 product-box" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+            <div class="product-img img-zoom mb-25">
+              <a href="#" class="text-decoration-none">
                 <img src="assets/img/BWC 2.jpg" class="img-fluid" alt="" />
                 <div class="product-action-wrap d-none d-sm-none d-md-block">
                   <button class="product-action-btn-1">
                     <i class="bi bi-eye"></i>
                   </button>
                 </div>
-              </div>
-              <div class="product-content pt-3 fw-bold">
-                <h3>
-                  <a
-                    href="#"
-                    class="text-decoration-none text-dark fw-bold"
-                    data-bs-toggle="modal"
-                    data-bs-target="#t-shirt"
-                    >BLACK AND GREEN BWC TEE</a
-                  >
-                </h3>
-                <div class="product-price">
-                  <span class="new-price">$30.00 AUD </span>
-                </div>
+              </a>
+            </div>
+            <div class="product-content pt-3 fw-bold">
+              <h3>
+                <a href="#" class="text-decoration-none text-dark fw-bold" data-bs-toggle="modal"
+                  data-bs-target="#t-shirt">BLACK AND GREEN BWC TEE</a>
+              </h3>
+              <div class="product-price">
+                <span class="new-price">$30.00 AUD </span>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mt-3">
-            <div
-              class="product-wrap mb-35 product-box"
-              data-bs-target="#exampleModalToggle"
-              data-bs-toggle="modal"
-            >
-              <div class="product-img img-zoom mb-25">
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="product-wrap mb-35 product-box" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+            <div class="product-img img-zoom mb-25">
+              <a href="#" class="text-decoration-none">
                 <img src="assets/img/BWC 2.jpg" class="img-fluid" alt="" />
                 <div class="product-action-wrap d-none d-sm-none d-md-block">
                   <button class="product-action-btn-1">
                     <i class="bi bi-eye"></i>
                   </button>
                 </div>
-              </div>
-              <div class="product-content pt-3 fw-bold">
-                <h3>
-                  <a
-                    href="#"
-                    class="text-decoration-none text-dark fw-bold"
-                    data-bs-toggle="modal"
-                    data-bs-target="#t-shirt"
-                    >BLACK AND GREEN BWC TEE</a
-                  >
-                </h3>
-                <div class="product-price">
-                  <span class="new-price">$30.00 AUD </span>
-                </div>
+              </a>
+            </div>
+            <div class="product-content pt-3 fw-bold">
+              <h3>
+                <a href="#" class="text-decoration-none text-dark fw-bold" data-bs-toggle="modal"
+                  data-bs-target="#t-shirt">BLACK AND GREEN BWC TEE</a>
+              </h3>
+              <div class="product-price">
+                <span class="new-price">$30.00 AUD </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End bwc store -->
+    </div>
+  </section>
+  <!-- End bwc store -->
 
-    <footer class="footer-area pb-2" style="background-color: black !important">
-      <div class="d-flex gap-2">
-        <div>
-          <p class="description m-0 mt-3 text-center text-white">
-            We acknowledge the Traditional Owners of the many lands where we
-            live and work and pay our respects to Elders past, present and
-            emerging. We celebrate the stories, culture and traditions of
-            Aboriginal and Torres Strait Islander Elders of all communities from
-            the many lands where we live, work and gather.
+  <footer class="footer-area pb-2" style="background-color: black !important">
+    <div class="d-flex gap-2">
+      <div>
+        <p class="description m-0 mt-3 text-center text-white">
+          We acknowledge the Traditional Owners of the many lands where we
+          live and work and pay our respects to Elders past, present and
+          emerging. We celebrate the stories, culture and traditions of
+          Aboriginal and Torres Strait Islander Elders of all communities from
+          the many lands where we live, work and gather.
+        </p>
+      </div>
+    </div>
+
+    <!---->
+    <div class="mt-3">
+      <div class="d-flex gap-2 align-items-center justify-content-center">
+        <div style="width: 40px">
+          <svg viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#aboriginal-flag_svg__clip0_1542_49709)">
+              <path d="M0 0h40.088v24H0V0z" fill="#000"></path>
+              <path d="M0 12h40.088v12H0V12z" fill="#C00"></path>
+              <path
+                d="M20.044 18c3.32 0 6.013-2.686 6.013-6s-2.692-6-6.013-6c-3.321 0-6.013 2.686-6.013 6s2.692 6 6.013 6z"
+                fill="#FF0"></path>
+            </g>
+            <defs>
+              <clipPath id="aboriginal-flag_svg__clip0_1542_49709">
+                <path fill="#fff" d="M0 0h40.088v24H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div style="width: 40px">
+          <svg viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#torres-strait-islanders-flag_svg__clip0_1542_49893)">
+              <path d="M36.119 19.8H0V24h36.119v-4.2zM36.119 0H0v4.2h36.119V0z" fill="#096"></path>
+              <path d="M36.119 4.2H0v1.2h36.119V4.2zM36.119 18.6H0v1.2h36.119v-1.2z" fill="#000"></path>
+              <path d="M36.119 5.4H0v13.2h36.119V5.4z" fill="#009"></path>
+              <path
+                d="M17.457 5.7c-6.02 1.8-5.718 6.3-3.792 10.44l-2.288 2.16 4.154-1.5v-5.52c1.324-1.98 3.732-1.98 5.057 0v5.52l4.153 1.5-2.287-2.16C24.38 12 24.68 7.5 18.66 5.7l-.602 2.58-.602-2.58z"
+                fill="#fff"></path>
+              <path
+                d="M20.347 11.823l-1.405 1.078.533 1.739-1.414-1.068-1.413 1.066.53-1.738-1.406-1.08 1.743-.006.543-1.734.547 1.735 1.742.008z"
+                fill="#fff"></path>
+            </g>
+            <defs>
+              <clipPath id="torres-strait-islanders-flag_svg__clip0_1542_49893">
+                <path fill="#fff" d="M0 0h36.119v24H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div class="bg-gray-3" style="background-color: black !important">
+      <div class="container">
+        <div class="footer-bottom copyright text-center bg-gray-3 font-weight-bold"
+          style="background-color: #000 !important">
+          <p class="description text-white mt-3">
+            Copyright ©2022 All rights reserved by
+            <a href="index.html" class="text-white description text-decoration-none">
+              Black Wealth Connect Pty Ltd.</a>&nbsp;| &nbsp;Design &amp; Developed By -
+            <a href="https://exoux.com/" class="text-decoration-none">Exoux Digital Solution</a>
           </p>
         </div>
       </div>
+    </div>
+  </footer>
 
-      <!---->
-      <div class="mt-3">
-        <div class="d-flex gap-2 align-items-center justify-content-center">
-          <div style="width: 40px">
-            <svg
-              viewBox="0 0 41 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#aboriginal-flag_svg__clip0_1542_49709)">
-                <path d="M0 0h40.088v24H0V0z" fill="#000"></path>
-                <path d="M0 12h40.088v12H0V12z" fill="#C00"></path>
-                <path
-                  d="M20.044 18c3.32 0 6.013-2.686 6.013-6s-2.692-6-6.013-6c-3.321 0-6.013 2.686-6.013 6s2.692 6 6.013 6z"
-                  fill="#FF0"
-                ></path>
-              </g>
-              <defs>
-                <clipPath id="aboriginal-flag_svg__clip0_1542_49709">
-                  <path fill="#fff" d="M0 0h40.088v24H0z"></path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div style="width: 40px">
-            <svg
-              viewBox="0 0 37 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#torres-strait-islanders-flag_svg__clip0_1542_49893)"
-              >
-                <path
-                  d="M36.119 19.8H0V24h36.119v-4.2zM36.119 0H0v4.2h36.119V0z"
-                  fill="#096"
-                ></path>
-                <path
-                  d="M36.119 4.2H0v1.2h36.119V4.2zM36.119 18.6H0v1.2h36.119v-1.2z"
-                  fill="#000"
-                ></path>
-                <path d="M36.119 5.4H0v13.2h36.119V5.4z" fill="#009"></path>
-                <path
-                  d="M17.457 5.7c-6.02 1.8-5.718 6.3-3.792 10.44l-2.288 2.16 4.154-1.5v-5.52c1.324-1.98 3.732-1.98 5.057 0v5.52l4.153 1.5-2.287-2.16C24.38 12 24.68 7.5 18.66 5.7l-.602 2.58-.602-2.58z"
-                  fill="#fff"
-                ></path>
-                <path
-                  d="M20.347 11.823l-1.405 1.078.533 1.739-1.414-1.068-1.413 1.066.53-1.738-1.406-1.08 1.743-.006.543-1.734.547 1.735 1.742.008z"
-                  fill="#fff"
-                ></path>
-              </g>
-              <defs>
-                <clipPath
-                  id="torres-strait-islanders-flag_svg__clip0_1542_49893"
-                >
-                  <path fill="#fff" d="M0 0h36.119v24H0z"></path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
+  <!-- men Modal -->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pb-0 border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <!---->
-      <div class="bg-gray-3" style="background-color: black !important">
-        <div class="container">
-          <div
-            class="footer-bottom copyright text-center bg-gray-3 font-weight-bold"
-            style="background-color: #000 !important"
-          >
-            <p class="description text-white mt-3">
-              Copyright ©2022 All rights reserved by
-              <a
-                href="index.html"
-                class="text-white description text-decoration-none"
-              >
-                Black Wealth Connect Pty Ltd.</a
-              >&nbsp;| &nbsp;Design &amp; Developed By -
-              <a href="https://exoux.com/" class="text-decoration-none"
-                >Exoux Digital Solution</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- men Modal -->
-    <div
-      class="modal fade"
-      id="exampleModalToggle"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header pb-0 border-0">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body pt-0 product-detail">
-            <div class="row">
-              <div class="col-md-5">
-                <img src="assets/img/BWC 2.jpg" alt="" class="img-fluid" />
-              </div>
-              <div class="col-md-7">
-                <h3 class="mt-2">BLACK AND GREEN BWC TEE</h3>
-                <h3 class="fs-5 mt-3">#30</h3>
-                <p class="description mt-3">Black Wealth Connect Clothing</p>
-                <div class="d-flex align-items-center gap-2">
-                  <div>
-                    <div class="number-input rounded-0">
-                      <button class="button" onclick="changeValue(-1)">
-                        -
-                      </button>
-                      <input
-                        class="input text-center"
-                        type="text"
-                        id="number"
-                        value="4"
-                        min="0"
-                      />
-                      <button class="button" onclick="changeValue(1)">+</button>
-                    </div>
-                  </div>
-                  <div>
-                    <button
-                      class="btn send-btn rounded-0 px-3 py-2"
-                      type="submit"
-                    >
-                      Add to cart
+        <div class="modal-body pt-0 product-detail">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="assets/img/BWC 2.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-md-7">
+              <h3 class="mt-2">BLACK AND GREEN BWC TEE</h3>
+              <h3 class="fs-5 mt-3">#30</h3>
+              <p class="description mt-3">Black Wealth Connect Clothing</p>
+              <div class="d-flex align-items-center gap-2">
+                <div>
+                  <div class="number-input rounded-0">
+                    <button class="button" onclick="changeValue(-1)">
+                      -
                     </button>
+                    <input class="input text-center" type="text" id="number" value="4" min="0" />
+                    <button class="button" onclick="changeValue(1)">+</button>
                   </div>
                 </div>
-                <p class="description mt-4">Select Size:</p>
-                <div class="d-flex">
-                  <div class="size-option active">S</div>
-                  <div class="size-option">M</div>
-                  <div class="size-option">L</div>
-                  <div class="size-option">XL</div>
+                <div>
+                  <button class="btn send-btn rounded-0 px-3 py-2" type="submit">
+                    Add to cart
+                  </button>
                 </div>
+              </div>
+              <p class="description mt-4">Select Size:</p>
+              <div class="d-flex">
+                <div class="size-option active">S</div>
+                <div class="size-option">M</div>
+                <div class="size-option">L</div>
+                <div class="size-option">XL</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End men modal -->
+  </div>
+  <!-- End men modal -->
 
-    <!-- cart offcanvas start -->
-    <div
-      class="offcanvas offcanvas-end p-3 px-0 px-lg-4 p-lg-4 cart-offcanvas"
-      data-bs-scroll="true"
-      tabindex="-1"
-      id="offcanvasScrolling"
-      aria-labelledby="offcanvasScrollingLabel"
-    >
-      <div class="offcanvas-header position-relative">
-        <!-- <button
+  <!-- cart offcanvas start -->
+  <div class="offcanvas offcanvas-end p-3 px-0 px-lg-4 p-lg-4 cart-offcanvas" data-bs-scroll="true" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header position-relative">
+      <!-- <button
           type="button"
           class="btn-close"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         ></button> -->
-        <a
-          class="cart-close px-3 py-2"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-          href="#"
-          ><i class="bi bi-x-lg text-white"></i
-        ></a>
-      </div>
-      <div class="offcanvas-body pt-5">
-        <div class="cart-content mt-5 px-0">
-          <ul>
-            <li>
-              <div class="cart-img">
-                <a href="#"><img src="assets/img/BWC !.jpg" alt="" /></a>
-              </div>
-              <div class="cart-title">
-                <h4 class="heading">
-                  <a href="#" class="text-decoration-none"
-                    >BLACK AND GREEN BWC HOODIE</a
-                  >
-                  (S)
-                </h4>
-                <span> 1 × 80 </span>
-              </div>
-              <div class="cart-delete">
-                <a href="javascript:void(0)" onclick='removeCartItem("uId1")'
-                  ><i class="bi bi-trash"></i
-                ></a>
-              </div>
-            </li>
-          </ul>
-          <div class="cart-total">
-            <h4>Subtotal: <span>$80</span></h4>
-          </div>
-          <div class="cart-btn btn-hover">
-            <a class="theme-color text-decoration-none" href="#">view cart</a>
-          </div>
-          <div class="checkout-btn btn-hover">
-            <a class="theme-color text-decoration-none" href="#">checkout</a>
-          </div>
+      <a class="cart-close px-3 py-2" data-bs-dismiss="offcanvas" aria-label="Close" href="#"><i
+          class="bi bi-x-lg text-white"></i></a>
+    </div>
+    <div class="offcanvas-body pt-5">
+      <div class="cart-content mt-5 px-0">
+        <ul>
+          <li>
+            <div class="cart-img">
+              <a href="#"><img src="assets/img/BWC !.jpg" alt="" /></a>
+            </div>
+            <div class="cart-title">
+              <h4 class="heading">
+                <a href="#" class="text-decoration-none">BLACK AND GREEN BWC HOODIE</a>
+                (S)
+              </h4>
+              <span> 1 × 80 </span>
+            </div>
+            <div class="cart-delete">
+              <a href="javascript:void(0)" onclick='removeCartItem("uId1")'><i class="bi bi-trash"></i></a>
+            </div>
+          </li>
+        </ul>
+        <div class="cart-total">
+          <h4>Subtotal: <span>$80</span></h4>
+        </div>
+        <div class="cart-btn btn-hover">
+          <a class="theme-color text-decoration-none" href="#">view cart</a>
+        </div>
+        <div class="checkout-btn btn-hover">
+          <a class="theme-color text-decoration-none" href="#">checkout</a>
         </div>
       </div>
     </div>
-    <!-- Cart offcanvas end -->
+  </div>
+  <!-- Cart offcanvas end -->
 
-    <!-- Header offcanvas start -->
-    <div
-      class="offcanvas offcanvas-end"
-      data-bs-scroll="true"
-      tabindex="-1"
-      id="offcanvasScrolling2"
-      aria-labelledby="offcanvasScrollingLabel2"
-      style="width: 15rem;"
-    >
-      <div class="offcanvas-header position-relative">
-        <!-- <button
+  <!-- Header offcanvas start -->
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling2"
+    aria-labelledby="offcanvasScrollingLabel2" style="width: 15rem;">
+    <div class="offcanvas-header position-relative">
+      <!-- <button
           type="button"
           class="btn-close"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         ></button> -->
-        <a
-          class="cancel-btn btn-dark px-3 py-2"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-          href="#"
-          ><i class="bi bi-x-lg text-white"></i
-        ></a>
-      </div>
-      <div class="offcanvas-body pt-2">
-        <ul
-          class="navbar-nav ms-auto d-flex align-items-start align-items-lg-center"
-        >
-          <li class="nav-item d-lg-none d-block">
-            <a class="nav-link" href="index.html">PODCAST</a>
-          </li>
-          <li class="nav-item d-block d-lg-none">
-            <a class="nav-link" href="events.html">EVENTS</a>
-          </li>
-          <li class="nav-item d-block d-lg-none">
-            <a class="nav-link" href="store.html">STORE</a>
-          </li>
-          <li class="nav-item d-block d-lg-none">
-            <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
-          </li>
-          <li class="nav-item d-block d-lg-none">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item d-block d-lg-none">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
-        </ul>
-      </div>
+      <a class="cancel-btn btn-dark px-3 py-2" data-bs-dismiss="offcanvas" aria-label="Close" href="#"><i
+          class="bi bi-x-lg text-white"></i></a>
     </div>
-    <!-- Header offcanvas end -->
+    <div class="offcanvas-body pt-2">
+      <ul class="navbar-nav ms-auto d-flex align-items-start align-items-lg-center">
+        <li class="nav-item d-lg-none d-block">
+          <a class="nav-link" href="index.html">PODCAST</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="events.html">EVENTS</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="store.html">STORE</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Header offcanvas end -->
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/ie7/ie7.min.js"></script> -->
-    <script>
-      const STORAGE_KEY = "countdownTargetDate";
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/ie7/ie7.min.js"></script> -->
+  <script>
+    const STORAGE_KEY = "countdownTargetDate";
 
-      function getOrSetTargetDate() {
-        let storedDate = localStorage.getItem(STORAGE_KEY);
-        if (storedDate) {
-          return new Date(storedDate);
-        } else {
-          const newTarget = new Date();
-          newTarget.setDate(newTarget.getDate() + 48);
-          localStorage.setItem(STORAGE_KEY, newTarget.toISOString());
-          return newTarget;
-        }
+    function getOrSetTargetDate() {
+      let storedDate = localStorage.getItem(STORAGE_KEY);
+      if (storedDate) {
+        return new Date(storedDate);
+      } else {
+        const newTarget = new Date();
+        newTarget.setDate(newTarget.getDate() + 48);
+        localStorage.setItem(STORAGE_KEY, newTarget.toISOString());
+        return newTarget;
+      }
+    }
+
+    const targetDate = getOrSetTargetDate();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "<h4>Launched!</h4>";
+        return;
       }
 
-      const targetDate = getOrSetTargetDate();
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
 
-      function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = targetDate - now;
+      document.getElementById("days").innerText = String(days).padStart(
+        2,
+        "0"
+      );
+      document.getElementById("hours").innerText = String(hours).padStart(
+        2,
+        "0"
+      );
+      document.getElementById("minutes").innerText = String(minutes).padStart(
+        2,
+        "0"
+      );
+      document.getElementById("seconds").innerText = String(seconds).padStart(
+        2,
+        "0"
+      );
+    }
 
-        if (distance < 0) {
-          document.getElementById("countdown").innerHTML = "<h4>Launched!</h4>";
-          return;
-        }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((distance / (1000 * 60)) % 60);
-        const seconds = Math.floor((distance / 1000) % 60);
-
-        document.getElementById("days").innerText = String(days).padStart(
-          2,
-          "0"
-        );
-        document.getElementById("hours").innerText = String(hours).padStart(
-          2,
-          "0"
-        );
-        document.getElementById("minutes").innerText = String(minutes).padStart(
-          2,
-          "0"
-        );
-        document.getElementById("seconds").innerText = String(seconds).padStart(
-          2,
-          "0"
-        );
-      }
-
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
-    </script>
-  </body>
 </html>

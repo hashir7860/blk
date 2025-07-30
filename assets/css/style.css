@@ -13,7 +13,7 @@
 }
 
 body {
-  background: url(/assets/img/home-bg.svg) fixed;
+  background: url(/blk/assets/img/home-bg.svg) fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,6 +108,10 @@ body {
 
 .subdescription {
   font-size: 13px;
+}
+
+.bg-hover-green{
+  background: transparent;
 }
 
 .bg-hover-green:hover {
