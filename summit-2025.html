@@ -1,1596 +1,1202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Summit 2025</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <style>
-      .nav-pills .nav-link {
-        padding: 2px 30px 2px 30px;
-        font-size: 0.875rem;
-        color: #000 !important;
-        text-transform: uppercase;
-        background-color: #2e7a64 !important;
-        border: 1px #2e7a64 solid;
-        margin-bottom: 10px;
-        border-radius: 50px;
-        font-weight: bold;
-      }
 
-      tr.tbl-head {
-        background: #24614f;
-        color: black;
-        text-align: left;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summit 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="assets/css/themify-icons.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.min.css">
+  <style>
+    .nav-pills .nav-link {
+      padding: 2px 30px 2px 30px;
+      font-size: 0.875rem;
+      color: #000 !important;
+      text-transform: uppercase;
+      background-color: #2e7a64 !important;
+      border: 1px #2e7a64 solid;
+      margin-bottom: 10px;
+      border-radius: 50px;
+      font-weight: bold;
+    }
 
-      th.tbl-block {
-        border: 1px #000 solid;
-        background: #24614f;
-      }
+    tr.tbl-head {
+      background: #24614f;
+      color: black;
+      text-align: left;
+    }
 
-      td.tbl-sub-block {
-        border: 1px #000 solid;
-        text-align: left;
-      }
+    th.tbl-block {
+      border: 1px #000 solid;
+      background: #24614f;
+    }
 
-      th.tbl-sub-block {
-        border: 1px #000 solid;
-      }
+    td.tbl-sub-block {
+      border: 1px #000 solid;
+      text-align: left;
+    }
 
-      @media (max-width: 576px) {
-        .hero-heading {
-          font-size: 24px;
-        }
+    th.tbl-sub-block {
+      border: 1px #000 solid;
+    }
+
+    @media (max-width: 576px) {
+      .hero-heading {
+        font-size: 24px;
       }
-    </style>
-  </head>
-  <body>
-    <header class="home-header">
-      <nav
-        class="container-fluid navbar fixed-top navbar-expand-lg py-3 px-0 px-lg-5"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="assets/img/logo.svg"
-              alt="Logo"
-              class="img-fluid d-block"
-              width="200"
-            />
-          </a>
-          <button
-            class="navbar-toggler bg-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+    }
+  </style>
+</head>
+
+<body>
+  <header class="home-header">
+    <nav class="container-fluid navbar fixed-top navbar-expand-lg py-3 px-0 px-lg-5">
+      <div class="container-fluid">
+        <a class="navbar-brand align-items-center" href="index.html">
+          <img src="assets/img/logo.svg" alt="Logo" class="img-fluid d-block logo" width="150" />
+        </a>
+        <ul class="gap-0 navbar-nav d-flex align-items-center d-lg-none list-unstyled" style="flex-direction: row">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-instagram fs-4"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-linkedin-in fs-4"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-youtube fs-4" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"><i class="ti-shopping-cart-full fs-4"></i></a>
+          </li>
+        </ul>
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto d-none d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">PODCAST</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">STORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto d-flex align-items-start align-items-lg-center">
+            <li class="nav-item d-lg-none d-block">
+              <a class="nav-link" href="index.html">PODCAST</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="store.html">STORE</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item d-none d-lg-block p-0">
+              <a class="nav-link p-0" href="#"><i class="bi bi-instagram fs-4"></i></a>
+            </li>
+            <li class="nav-item d-none d-lg-block p-0">
+              <a class="nav-link p-0" href="#"><i class="fab fa-linkedin-in fs-4"></i></a>
+            </li>
+            <li class="nav-item d-none d-lg-block p-0">
+              <a class="nav-link p-0" href="#">
+                <i class="fa fa-youtube fs-4" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item d-none d-lg-block p-0">
+              <a class="nav-link p-0" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"><i class="ti-shopping-cart-full fs-4"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End header section -->
+
+  <!-- Hero section -->
+  <section id="contact-hero" class="d-flex align-items-center justify-content-center text-center mt-5">
+    <div class="container">
+      <h3 class="hero-heading m-0 mt-5">SUMMIT 2025</h3>
+      <ul class="list-unstyled d-flex align-items-center gap-3 justify-content-center">
+        <li>
+          <a href="index" class="text-dark text-decoration-none description">Home</a>
+        </li>
+        <li><i class="bi bi-chevron-right text-dark"></i></li>
+        <li class="description">Summit 2025</li>
+      </ul>
+    </div>
+  </section>
+  <!-- End hero section -->
+
+  <!-- Contact Section start -->
+  <section class="my-5 pt-5">
+    <div class="container">
+      <h3 class="heading text-center">EVENT HIGHLIGHTS</h3>
+      <div class="ratio ratio-16x9 youtube-container my-5">
+        <iframe src="https://www.youtube.com/embed/24Z8FpVrbfg"
+          title="THE BLACK WEALTH CONNECT SUMMIT - SYDNEY AUSTRALIA 2024 HIGHLIGHTS" allowfullscreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <ul class="nav nav-pills mb-3 justify-content-center gap-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-speakers-tab" data-bs-toggle="pill" data-bs-target="#pills-speakers"
+            type="button" role="tab" aria-controls="pills-speakers" aria-selected="true">
+            SPEAKERS
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">PODCAST</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">EVENTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="store.html">STORE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
-            </ul>
-            <ul
-              class="navbar-nav ms-auto d-flex align-items-start align-items-lg-center"
-            >
-              <li class="nav-item d-lg-none d-block">
-                <a class="nav-link" href="index.html">PODCAST</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="events.html">EVENTS</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="store.html">STORE</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="bi bi-instagram fs-4"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fab fa-linkedin-in fs-4"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fab fa-youtube fs-4"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fas fa-cart-plus fs-4"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- End header section -->
-
-    <!-- Hero section -->
-    <section
-      id="contact-hero"
-      class="d-flex align-items-center justify-content-center text-center mt-5"
-    >
-      <div class="container">
-        <h3 class="hero-heading m-0 mt-5">SUMMIT 2025</h3>
-        <ul
-          class="list-unstyled d-flex align-items-center gap-3 justify-content-center"
-        >
-          <li>
-            <a href="index" class="text-dark text-decoration-none description"
-              >Home</a
-            >
-          </li>
-          <li><i class="bi bi-chevron-right text-dark"></i></li>
-          <li class="description">Summit 2025</li>
-        </ul>
-      </div>
-    </section>
-    <!-- End hero section -->
-
-    <!-- Contact Section start -->
-    <section class="my-5 pt-5">
-      <div class="container">
-        <h3 class="heading text-center">EVENT HIGHLIGHTS</h3>
-        <div class="ratio ratio-16x9 youtube-container my-5">
-          <iframe
-            src="https://www.youtube.com/embed/24Z8FpVrbfg"
-            title="THE BLACK WEALTH CONNECT SUMMIT - SYDNEY AUSTRALIA 2024 HIGHLIGHTS"
-            allowfullscreen
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-        <ul
-          class="nav nav-pills mb-3 justify-content-center gap-3"
-          id="pills-tab"
-          role="tablist"
-        >
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-speakers-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-speakers"
-              type="button"
-              role="tab"
-              aria-controls="pills-speakers"
-              aria-selected="true"
-            >
-              SPEAKERS
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-agenda-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-agenda"
-              type="button"
-              role="tab"
-              aria-controls="pills-agenda"
-              aria-selected="false"
-            >
-              AGENDA
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-partners-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-partners"
-              type="button"
-              role="tab"
-              aria-controls="pills-partners"
-              aria-selected="false"
-            >
-              PARTNERS
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              CONTACT
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-gallery-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-gallery"
-              type="button"
-              role="tab"
-              aria-controls="pills-gallery"
-              aria-selected="false"
-            >
-              GALLERY
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-speakers"
-            role="tabpanel"
-            aria-labelledby="pills-speakers-tab"
-            tabindex="0"
-          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-agenda-tab" data-bs-toggle="pill" data-bs-target="#pills-agenda"
+            type="button" role="tab" aria-controls="pills-agenda" aria-selected="false">
+            AGENDA
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-partners-tab" data-bs-toggle="pill" data-bs-target="#pills-partners"
+            type="button" role="tab" aria-controls="pills-partners" aria-selected="false">
+            PARTNERS
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+            CONTACT
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#pills-gallery"
+            type="button" role="tab" aria-controls="pills-gallery" aria-selected="false">
+            GALLERY
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-speakers" role="tabpanel" aria-labelledby="pills-speakers-tab"
+          tabindex="0">
+          <div>
             <div>
-              <div>
-                <div class="row justify-content-center">
-                  <div class="text-center col-md-4 my-4">
-                    <h3 class="title-head-sm text-white hero-heading">
-                      EVENT HOST
-                    </h3>
-                  </div>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                      >
-                        <img
-                          src="assets/img/James.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >HOST</span
-                          >
-                          <h3 class="subheading">JAMES UNAEZE</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="row justify-content-center">
+                <div class="text-center col-md-4 my-4">
+                  <h3 class="title-head-sm text-white hero-heading">
+                    EVENT HOST
+                  </h3>
                 </div>
               </div>
-              <div class="mt-5">
-                <div class="row justify-content-center">
-                  <div class="text-center col-md-6 my-4">
-                    <h3 class="title-head-sm text-white hero-heading">
-                      EVENT SPEAKERS
-                    </h3>
-                  </div>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 14 (3).jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">YEMI PENN</h3>
-                          <p class="description fs-6">Curious Rebel</p>
-                        </div>
-                      </div>
+              <div class="row justify-content-center">
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200">
+                      <img src="assets/img/James.jpg" class="img-fluid rounded-circle team-bx" alt="" />
                     </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 15.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">PHILLIMON ZONGO</h3>
-                          <p class="description fs-6">
-                            CEO of Cyber Leadership Institute
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 16.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">TIGIST KEBEDE</h3>
-                          <p class="description fs-6">
-                            Co-Founder of Pola Practice & Senior Trauma
-                            Counsellor
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 12.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">NASALIFYA NAMWINGA</h3>
-                          <p class="description fs-6">
-                            Co-Founder of Pola Practice & Senior Clinical
-                            Psychologist
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-5">
-                <div class="row justify-content-center">
-                  <div class="text-center col-md-9 my-4">
-                    <h1 class="main-heading">PANEL DISCUSSIONS</h1>
-                    <h3 class="title-head-sm text-white hero-heading mt-5">
-                      CONFRONTING FINANCIAL TABOOS
-                    </h3>
-                  </div>
-                </div>
-                <div class="row justify-content-center mt-4">
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 24.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">YEMI PENN</h3>
-                          <p class="description fs-6">Curious Rebel</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 2.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">PHILLIMON ZONGO</h3>
-                          <p class="description fs-6">
-                            CEO of Cyber Leadership Institute
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/7.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">TIGIST KEBEDE</h3>
-                          <p class="description fs-6">
-                            Co-Founder of Pola Practice & Senior Trauma
-                            Counsellor
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 7 (2).jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">NASALIFYA NAMWINGA</h3>
-                          <p class="description fs-6">
-                            Co-Founder of Pola Practice & Senior Clinical
-                            Psychologist
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-5">
-                <div class="row justify-content-center">
-                  <div class="text-center col-md-9 my-4">
-                    <h3 class="title-head-sm text-white hero-heading mt-5">
-                      BUILDING A THRIVING BUSINESS
-                    </h3>
-                  </div>
-                </div>
-                <div class="row justify-content-center mt-4">
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 17.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">YEMI PENN</h3>
-                          <p class="description fs-6">Curious Rebel</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 18.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">PHILLIMON ZONGO</h3>
-                          <p class="description fs-6">
-                            CEO of Cyber Leadership Institute
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 19-b.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">TIGIST KEBEDE</h3>
-                          <p class="description fs-6">
-                            Co-Founder of Pola Practice & Senior Trauma
-                            Counsellor
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 25.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">NASALIFYA NAMWINGA</h3>
-                          <p class="description fs-6">
-                            Co-Founder of Pola Practice & Senior Clinical
-                            Psychologist
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-5">
-                <div class="row justify-content-center">
-                  <div class="text-center col-md-10 my-4">
-                    <h1 class="main-heading">BREAKOUT SESSION</h1>
-                    <h3 class="title-head-sm text-white hero-heading mt-5">
-                      UNDERSTANDING FINANCIAL LITERACY
-                    </h3>
-                  </div>
-                </div>
-                <div class="row justify-content-center mt-4">
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/mm.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >FACILITATOR</span
-                          >
-                          <h3 class="subheading my-2">CJ NDHLOVU</h3>
-                          <p class="description fs-6">
-                            Senior Accounting Manager
-                          </p>
-                        </div>
-                      </div>
-                      <div>
-                        <h3
-                          class="title-head-sm text-dark subdescription fw-bold"
-                        >
-                          Tax Planning Strategies
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 27.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >FACILITATOR</span
-                          >
-                          <h3 class="subheading my-2">RIDER ANTWI</h3>
-                          <p class="description fs-6">
-                            Financial Advisor Support
-                          </p>
-                        </div>
-                      </div>
-                      <div>
-                        <h3 class="title-head-sm fw-bold subdescription">
-                          Financial Goal Setting
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/33.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >FACILITATOR</span
-                          >
-                          <h3 class="subheading my-2">LIONEL IHEANACHO</h3>
-                          <p class="description fs-6">
-                            Financial Advice Specialist
-                          </p>
-                        </div>
-                      </div>
-                      <div>
-                        <h3
-                          class="title-head-sm subdescription text-dark fw-bold px-2"
-                        >
-                          Investment Planning Essentials
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 34.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >FACILITATOR</span
-                          >
-                          <h3 class="subheading my-2">JESSE AMANKWATIA</h3>
-                          <p class="description fs-6">Senior Finance Broker</p>
-                        </div>
-                      </div>
-                      <div>
-                        <h3 class="title-head-sm fw-bold subdescription px-2">
-                          Property Investment Strategies
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-5">
-                <div class="row justify-content-center">
-                  <div class="text-center col-md-10 my-4">
-                    <h1 class="main-heading">MODERATORS</h1>
-                  </div>
-                </div>
-                <div class="row justify-content-center mt-4">
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 41.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">TIGIST KEBEDE</h3>
-                          <p class="description fs-6">
-                            Co-Founder of Pola Practice & Senior Trauma
-                            Counsellor
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 mt-3">
-                    <div class="img-bx">
-                      <div
-                        class="single-team-wrap text-center rounded-circle"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-bs-target="#exampleModalToggle"
-                        data-bs-toggle="modal"
-                      >
-                        <img
-                          src="assets/img/peson 44.jpg"
-                          class="img-fluid rounded-circle team-bx"
-                          alt=""
-                        />
-                      </div>
-                      <div class="sub-txt">
-                        <div class="sub-title-bx text-center mt-4">
-                          <span
-                            class="description fw-bold fs-6 text-decoration-underline"
-                            >SPEAKER</span
-                          >
-                          <h3 class="subheading my-2">NASALIFYA NAMWINGA</h3>
-                          <p class="description fs-6">
-                            Co-Founder of Pola Practice & Senior Clinical
-                            Psychologist
-                          </p>
-                        </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">HOST</span>
+                        <h3 class="subheading">JAMES UNAEZE</h3>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-agenda"
-            role="tabpanel"
-            aria-labelledby="pills-agenda-tab"
-            tabindex="0"
-          >
-            <div class="text-center my-4">
-              <h3 class="heading">AGENDA</h3>
-            </div>
-            <div class="table-responsive">
-              <table class="table tbl-strt fs-6">
-                <thead class="thead-dark">
-                  <tr class="tbl-head">
-                    <th scope="col" class="tbl-block">TIME</th>
-                    <th scope="col" class="tbl-block">SESSION</th>
-                    <th scope="col" class="tbl-block">PRESENTER</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      9.00am
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">
-                      Registrations Opens
-                    </td>
-                    <td class="tbl-sub-block bg-transparent"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      10.00am
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">
-                      Opening Remarks
-                    </td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>James Unaeze,</b> Black Wealth Connect Summit Host
-                      <br />
-                      <b>Fabrice Omankoy,</b> Founder of Black Wealth Connect
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      10.15am
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">
-                      Opening Keynote Address
-                    </td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>Phillimon Zongo,</b> CEO of Cyber Leadership Institute
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      10.45am
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">
-                      Panel | Confronting Financial Toboos
-                    </td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>Bulelwa Freer,</b> Founder of Absolute Advantage
-                      Financial Solutions<br />
-                      <b>Onis Asare,</b> Founder of Window Property Group<br />
-                      <b>Edem Dokli,</b> Financial Advisor Recruiter<br />
-                      <b>Fundikira Kippaya,</b> Transformation Coach &amp;
-                      Founder of Skool of Flow <br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-block">11.30am</th>
-                    <th class="tbl-block" style="text-align: left">
-                      Morning Tea
-                    </th>
-                    <th class="tbl-block"></th>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      11.45am
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">Guest Speaker</td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>Tigist Kabede,</b> Co-Founder of Pola Practice &amp;
-                      Senior Trauma Counsellor <br />
-                      <b>Nasalifya Namwinga,</b> Co-Founder of Pola Practice
-                      &amp; Senior Clinical Psychologist <br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      12.15pm
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">
-                      Panel | Building a Thriving Business
-                    </td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>Daniel Ajak,</b> Founder of Ajak &amp; Associates<br />
-                      <b>Dr. Helen Keteku-Adu,</b> Founder of PGK Medical<br />
-                      <b>Ade Tokunboh,</b> Founder of Little Lagos<br />
-                      <b>Chrissy Zemura,</b> Celebrity Hair Stylist and Founder
-                      of Zemura<br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-block">1.00pm</th>
-                    <th class="tbl-block" style="text-align: left">
-                      Networking Lunch
-                    </th>
-                    <th class="tbl-block"></th>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      2.00pm
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">
-                      Midpoint Remarks and Reflections
-                    </td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>James Unaeze,</b> Black Wealth Connect Summit Host<br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      2.15pm
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">Guest Speaker</td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>Yemi Penn,</b> Curious Rebel<br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      2.45pm
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">
-                      Breakout Sessions
-                    </td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>CJ Ndhlovu,</b> Senior Accounting Manager
-                      <b style="font-size: 14px">(Tax Planning Strategies)</b
-                      ><br />
-                      <b>Rider Antwi,</b> Financial Advisor Support
-                      <b style="font-size: 14px">(Financial goal setting)</b
-                      ><br />
-                      <b>Lionel Iheanacho,</b> Financial Advice Specialist
-                      <b style="font-size: 14px"
-                        >(Investment Planning Essentials)</b
-                      ><br />
-                      <b>Jesse Amankwatia,</b> Senior Finance Broker
-                      <b style="font-size: 14px"
-                        >(Property Investment Strategies)</b
-                      ><br />
-                      <b>Nhial Majok,</b> Founder of Nile Capital
-                      <b style="font-size: 14px">(Learn Crypto Basics)</b><br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-block">4.00pm</th>
-                    <th class="tbl-block" style="text-align: left">
-                      Afternoon Tea
-                    </th>
-                    <th class="tbl-block"></th>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      4.20pm
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">Guest Speaker</td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>Fundikira Kippaya,</b> Transformation Coach &amp;
-                      Founder of Skool of Flow
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      4.50pm
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">
-                      Closing Remarks and Reflections
-                    </td>
-                    <td class="tbl-sub-block bg-transparent">
-                      <b>James Unaeze,</b> Black Wealth Connect Summit Host<br />
-                      <b>Fabrice Omankoy,</b> Founder of Black Wealth Connect<br />
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row" class="tbl-sub-block bg-transparent">
-                      5.00pm
-                    </th>
-                    <td class="tbl-sub-block bg-transparent">Close</td>
-                    <td class="tbl-sub-block bg-transparent"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="tbl-block">5.30pm</th>
-                    <th class="tbl-block" style="text-align: left">
-                      Networking Drinks
-                    </th>
-                    <th class="tbl-block">
-                      <b>The Crown Hotel Parramatta, 1/295 Church Street</b>
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-partners"
-            role="tabpanel"
-            aria-labelledby="pills-partners"
-            tabindex="0"
-          >
-            <div class="row">
-              <div class="text-center my-4">
-                <h3 class="heading">PARTNERS</h3>
+            <div class="mt-5">
+              <div class="row justify-content-center">
+                <div class="text-center col-md-6 my-4">
+                  <h3 class="title-head-sm text-white hero-heading">
+                    EVENT SPEAKERS
+                  </h3>
+                </div>
               </div>
-              <div class="col-md-4 mt-3">
-                <div class="card rounded-4 border-0 h-100 bg-green">
-                  <div
-                    class="card-body d-flex align-items-center p-0 justify-content-center"
-                  >
+              <div class="row justify-content-center">
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 14 (3).jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">YEMI PENN</h3>
+                        <p class="description fs-6">Curious Rebel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 15.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">PHILLIMON ZONGO</h3>
+                        <p class="description fs-6">
+                          CEO of Cyber Leadership Institute
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 16.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">TIGIST KEBEDE</h3>
+                        <p class="description fs-6">
+                          Co-Founder of Pola Practice & Senior Trauma
+                          Counsellor
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 12.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">NASALIFYA NAMWINGA</h3>
+                        <p class="description fs-6">
+                          Co-Founder of Pola Practice & Senior Clinical
+                          Psychologist
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <div class="row justify-content-center">
+                <div class="text-center col-md-9 my-4">
+                  <h1 class="main-heading">PANEL DISCUSSIONS</h1>
+                  <h3 class="title-head-sm text-white hero-heading mt-5">
+                    CONFRONTING FINANCIAL TABOOS
+                  </h3>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 24.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">YEMI PENN</h3>
+                        <p class="description fs-6">Curious Rebel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 2.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">PHILLIMON ZONGO</h3>
+                        <p class="description fs-6">
+                          CEO of Cyber Leadership Institute
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/7.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">TIGIST KEBEDE</h3>
+                        <p class="description fs-6">
+                          Co-Founder of Pola Practice & Senior Trauma
+                          Counsellor
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 7 (2).jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">NASALIFYA NAMWINGA</h3>
+                        <p class="description fs-6">
+                          Co-Founder of Pola Practice & Senior Clinical
+                          Psychologist
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <div class="row justify-content-center">
+                <div class="text-center col-md-9 my-4">
+                  <h3 class="title-head-sm text-white hero-heading mt-5">
+                    BUILDING A THRIVING BUSINESS
+                  </h3>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 17.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">YEMI PENN</h3>
+                        <p class="description fs-6">Curious Rebel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 18.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">PHILLIMON ZONGO</h3>
+                        <p class="description fs-6">
+                          CEO of Cyber Leadership Institute
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 19-b.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">TIGIST KEBEDE</h3>
+                        <p class="description fs-6">
+                          Co-Founder of Pola Practice & Senior Trauma
+                          Counsellor
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 25.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">NASALIFYA NAMWINGA</h3>
+                        <p class="description fs-6">
+                          Co-Founder of Pola Practice & Senior Clinical
+                          Psychologist
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <div class="row justify-content-center">
+                <div class="text-center col-md-10 my-4">
+                  <h1 class="main-heading">BREAKOUT SESSION</h1>
+                  <h3 class="title-head-sm text-white hero-heading mt-5">
+                    UNDERSTANDING FINANCIAL LITERACY
+                  </h3>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/mm.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">FACILITATOR</span>
+                        <h3 class="subheading my-2">CJ NDHLOVU</h3>
+                        <p class="description fs-6">
+                          Senior Accounting Manager
+                        </p>
+                      </div>
+                    </div>
                     <div>
-                      <img
-                        src="assets/img/partners/nic.png"
-                        alt=""
-                        class="img-fluid client-logo"
-                      />
+                      <h3 class="title-head-sm text-dark subdescription fw-bold">
+                        Tax Planning Strategies
+                      </h3>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4 mt-3">
-                <div class="card rounded-4 border-0 h-100 bg-green">
-                  <div
-                    class="card-body d-flex align-items-center p-0 justify-content-center"
-                  >
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 27.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">FACILITATOR</span>
+                        <h3 class="subheading my-2">RIDER ANTWI</h3>
+                        <p class="description fs-6">
+                          Financial Advisor Support
+                        </p>
+                      </div>
+                    </div>
                     <div>
-                      <img
-                        src="assets/img/partners/AJK.png"
-                        alt=""
-                        class="img-fluid client-logo"
-                      />
+                      <h3 class="title-head-sm fw-bold subdescription">
+                        Financial Goal Setting
+                      </h3>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4 mt-3">
-                <div class="card rounded-4 border-0 h-100 bg-green">
-                  <div
-                    class="card-body d-flex align-items-center p-0 justify-content-center"
-                  >
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/33.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">FACILITATOR</span>
+                        <h3 class="subheading my-2">LIONEL IHEANACHO</h3>
+                        <p class="description fs-6">
+                          Financial Advice Specialist
+                        </p>
+                      </div>
+                    </div>
                     <div>
-                      <img
-                        src="assets/img/partners/nile.png"
-                        alt=""
-                        class="img-fluid client-logo"
-                      />
+                      <h3 class="title-head-sm subdescription text-dark fw-bold px-2">
+                        Investment Planning Essentials
+                      </h3>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4 mt-3">
-                <div class="card rounded-4 border-0 h-100 bg-green">
-                  <div
-                    class="card-body d-flex align-items-center p-0 justify-content-center"
-                  >
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 34.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">FACILITATOR</span>
+                        <h3 class="subheading my-2">JESSE AMANKWATIA</h3>
+                        <p class="description fs-6">Senior Finance Broker</p>
+                      </div>
+                    </div>
                     <div>
-                      <img
-                        src="assets/img/partners/Final Logo-03 (1).png"
-                        alt=""
-                        class="img-fluid client-logo"
-                      />
+                      <h3 class="title-head-sm fw-bold subdescription px-2">
+                        Property Investment Strategies
+                      </h3>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact"
-            tabindex="0"
-          >
-            <div class="row justify-content-center text-center my-5">
-              <h2 class="heading">CONTACT</h2>
-              <div class="col-lg-12 col-md-12 col-sm-6 col-12">
-                <div>
-                  <h4 class="subheading fw-bold mt-4 fs-4">
-                    Information and Sponsorship
-                  </h4>
-                  <p class="description">
-                    For further information or sponsorship opportunities please
-                    contact our team at <br />
-                    <a href="#" class="text-decoration-none text-dark"
-                      >summit@blkwealthconnect.com</a
-                    >.
-                  </p>
-                </div>
-                <div>
-                  <h4 class="subheading fw-bold mt-4 fs-4">Stay In Touch</h4>
-                  <p class="description">
-                    To join our mailing list and stay informed about the Black
-                    Wealth Connect Summit,
-                    <a href="#" class="text-decoration-none text-dark"
-                      >click here</a
-                    >.
-                  </p>
+            <div class="mt-5">
+              <div class="row justify-content-center">
+                <div class="text-center col-md-10 my-4">
+                  <h1 class="main-heading">MODERATORS</h1>
                 </div>
               </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-gallery"
-            role="tabpanel"
-            aria-labelledby="pills-gallery"
-            tabindex="0"
-          >
-            <div class="row">
-              <!-- Image thumbnails -->
-              <div class="col-md-3 mt-3">
-                <img
-                  src="assets/img/gallery/1.jpg"
-                  class="img-fluid gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="0"
-                  alt=""
-                />
-
-                <img
-                  src="assets/img/gallery/2.jpg"
-                  class="img-fluid gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="2"
-                  alt=""
-                />
-
-                <img
-                  src="assets/img/gallery/3.jpg"
-                  class="img-fluid gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="6"
-                  alt=""
-                />
-              </div>
-              <div class="col-md-3 mt-3">
-                <img
-                  src="assets/img/gallery/4.jpg"
-                  class="img-fluid gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="5"
-                  alt=""
-                />
-                <img
-                  src="assets/img/gallery/5.jpg"
-                  class="img-fluid gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="3"
-                  alt=""
-                />
-                <img
-                  src="assets/img/gallery/6.jpeg"
-                  class="img-fluid gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="7"
-                  alt=""
-                />
-              </div>
-              <div class="col-md-3 mt-3">
-                <img
-                  src="assets/img/gallery/7.jpg"
-                  class="img-fluid gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="8"
-                  alt=""
-                />
-              </div>
-              <div class="col-md-3 mt-3">
-                <img
-                  src="assets/img/gallery/1.jpg"
-                  class="img-fluid mt-2 gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="1"
-                  alt=""
-                />
-                <img
-                  src="assets/img/gallery/2.jpg"
-                  class="img-fluid gallery-thumb mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#galleryModal"
-                  data-index="4"
-                  alt=""
-                />
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 41.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">TIGIST KEBEDE</h3>
+                        <p class="description fs-6">
+                          Co-Founder of Pola Practice & Senior Trauma
+                          Counsellor
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="img-bx">
+                    <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                      data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <img src="assets/img/peson 44.jpg" class="img-fluid rounded-circle team-bx" alt="" />
+                    </div>
+                    <div class="sub-txt">
+                      <div class="sub-title-bx text-center mt-4">
+                        <span class="description fw-bold fs-6 text-decoration-underline">SPEAKER</span>
+                        <h3 class="subheading my-2">NASALIFYA NAMWINGA</h3>
+                        <p class="description fs-6">
+                          Co-Founder of Pola Practice & Senior Clinical
+                          Psychologist
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End contact section  -->
+        <div class="tab-pane fade" id="pills-agenda" role="tabpanel" aria-labelledby="pills-agenda-tab" tabindex="0">
+          <div class="text-center my-4">
+            <h3 class="heading">AGENDA</h3>
+          </div>
+          <div class="table-responsive">
+            <table class="table tbl-strt fs-6">
+              <thead class="thead-dark">
+                <tr class="tbl-head">
+                  <th scope="col" class="tbl-block">TIME</th>
+                  <th scope="col" class="tbl-block">SESSION</th>
+                  <th scope="col" class="tbl-block">PRESENTER</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    9.00am
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">
+                    Registrations Opens
+                  </td>
+                  <td class="tbl-sub-block bg-transparent"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    10.00am
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">
+                    Opening Remarks
+                  </td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>James Unaeze,</b> Black Wealth Connect Summit Host
+                    <br />
+                    <b>Fabrice Omankoy,</b> Founder of Black Wealth Connect
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    10.15am
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">
+                    Opening Keynote Address
+                  </td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>Phillimon Zongo,</b> CEO of Cyber Leadership Institute
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    10.45am
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">
+                    Panel | Confronting Financial Toboos
+                  </td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>Bulelwa Freer,</b> Founder of Absolute Advantage
+                    Financial Solutions<br />
+                    <b>Onis Asare,</b> Founder of Window Property Group<br />
+                    <b>Edem Dokli,</b> Financial Advisor Recruiter<br />
+                    <b>Fundikira Kippaya,</b> Transformation Coach &amp;
+                    Founder of Skool of Flow <br />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-block">11.30am</th>
+                  <th class="tbl-block" style="text-align: left">
+                    Morning Tea
+                  </th>
+                  <th class="tbl-block"></th>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    11.45am
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">Guest Speaker</td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>Tigist Kabede,</b> Co-Founder of Pola Practice &amp;
+                    Senior Trauma Counsellor <br />
+                    <b>Nasalifya Namwinga,</b> Co-Founder of Pola Practice
+                    &amp; Senior Clinical Psychologist <br />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    12.15pm
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">
+                    Panel | Building a Thriving Business
+                  </td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>Daniel Ajak,</b> Founder of Ajak &amp; Associates<br />
+                    <b>Dr. Helen Keteku-Adu,</b> Founder of PGK Medical<br />
+                    <b>Ade Tokunboh,</b> Founder of Little Lagos<br />
+                    <b>Chrissy Zemura,</b> Celebrity Hair Stylist and Founder
+                    of Zemura<br />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-block">1.00pm</th>
+                  <th class="tbl-block" style="text-align: left">
+                    Networking Lunch
+                  </th>
+                  <th class="tbl-block"></th>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    2.00pm
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">
+                    Midpoint Remarks and Reflections
+                  </td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>James Unaeze,</b> Black Wealth Connect Summit Host<br />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    2.15pm
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">Guest Speaker</td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>Yemi Penn,</b> Curious Rebel<br />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    2.45pm
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">
+                    Breakout Sessions
+                  </td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>CJ Ndhlovu,</b> Senior Accounting Manager
+                    <b style="font-size: 14px">(Tax Planning Strategies)</b><br />
+                    <b>Rider Antwi,</b> Financial Advisor Support
+                    <b style="font-size: 14px">(Financial goal setting)</b><br />
+                    <b>Lionel Iheanacho,</b> Financial Advice Specialist
+                    <b style="font-size: 14px">(Investment Planning Essentials)</b><br />
+                    <b>Jesse Amankwatia,</b> Senior Finance Broker
+                    <b style="font-size: 14px">(Property Investment Strategies)</b><br />
+                    <b>Nhial Majok,</b> Founder of Nile Capital
+                    <b style="font-size: 14px">(Learn Crypto Basics)</b><br />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-block">4.00pm</th>
+                  <th class="tbl-block" style="text-align: left">
+                    Afternoon Tea
+                  </th>
+                  <th class="tbl-block"></th>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    4.20pm
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">Guest Speaker</td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>Fundikira Kippaya,</b> Transformation Coach &amp;
+                    Founder of Skool of Flow
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    4.50pm
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">
+                    Closing Remarks and Reflections
+                  </td>
+                  <td class="tbl-sub-block bg-transparent">
+                    <b>James Unaeze,</b> Black Wealth Connect Summit Host<br />
+                    <b>Fabrice Omankoy,</b> Founder of Black Wealth Connect<br />
+                  </td>
+                </tr>
 
-    <footer class="footer-area pb-2" style="background-color: black !important">
-      <div class="d-flex gap-2">
-        <div>
-          <p class="description m-0 mt-3 text-center text-white">
-            We acknowledge the Traditional Owners of the many lands where we
-            live and work and pay our respects to Elders past, present and
-            emerging. We celebrate the stories, culture and traditions of
-            Aboriginal and Torres Strait Islander Elders of all communities from
-            the many lands where we live, work and gather.
+                <tr>
+                  <th scope="row" class="tbl-sub-block bg-transparent">
+                    5.00pm
+                  </th>
+                  <td class="tbl-sub-block bg-transparent">Close</td>
+                  <td class="tbl-sub-block bg-transparent"></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="tbl-block">5.30pm</th>
+                  <th class="tbl-block" style="text-align: left">
+                    Networking Drinks
+                  </th>
+                  <th class="tbl-block">
+                    <b>The Crown Hotel Parramatta, 1/295 Church Street</b>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-partners" role="tabpanel" aria-labelledby="pills-partners" tabindex="0">
+          <div class="row">
+            <div class="text-center my-4">
+              <h3 class="heading">PARTNERS</h3>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card rounded-4 border-0 h-100 bg-green">
+                <div class="card-body d-flex align-items-center p-0 justify-content-center">
+                  <div>
+                    <img src="assets/img/partners/nic.png" alt="" class="img-fluid client-logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card rounded-4 border-0 h-100 bg-green">
+                <div class="card-body d-flex align-items-center p-0 justify-content-center">
+                  <div>
+                    <img src="assets/img/partners/AJK.png" alt="" class="img-fluid client-logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card rounded-4 border-0 h-100 bg-green">
+                <div class="card-body d-flex align-items-center p-0 justify-content-center">
+                  <div>
+                    <img src="assets/img/partners/nile.png" alt="" class="img-fluid client-logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card rounded-4 border-0 h-100 bg-green">
+                <div class="card-body d-flex align-items-center p-0 justify-content-center">
+                  <div>
+                    <img src="assets/img/partners/Final Logo-03 (1).png" alt="" class="img-fluid client-logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact" tabindex="0">
+          <div class="row justify-content-center text-center my-5">
+            <h2 class="heading">CONTACT</h2>
+            <div class="col-lg-12 col-md-12 col-sm-6 col-12">
+              <div>
+                <h4 class="subheading fw-bold mt-4 fs-4">
+                  Information and Sponsorship
+                </h4>
+                <p class="description">
+                  For further information or sponsorship opportunities please
+                  contact our team at <br />
+                  <a href="#" class="text-decoration-none text-dark">summit@blkwealthconnect.com</a>.
+                </p>
+              </div>
+              <div>
+                <h4 class="subheading fw-bold mt-4 fs-4">Stay In Touch</h4>
+                <p class="description">
+                  To join our mailing list and stay informed about the Black
+                  Wealth Connect Summit,
+                  <a href="#" class="text-decoration-none text-dark">click here</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-gallery" role="tabpanel" aria-labelledby="pills-gallery" tabindex="0">
+          <div class="row">
+            <!-- Image thumbnails -->
+            <div class="col-md-3 mt-3">
+              <img src="assets/img/gallery/1.jpg" class="img-fluid gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="0" alt="" />
+
+              <img src="assets/img/gallery/2.jpg" class="img-fluid gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="2" alt="" />
+
+              <img src="assets/img/gallery/3.jpg" class="img-fluid gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="6" alt="" />
+            </div>
+            <div class="col-md-3 mt-3">
+              <img src="assets/img/gallery/4.jpg" class="img-fluid gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="5" alt="" />
+              <img src="assets/img/gallery/5.jpg" class="img-fluid gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="3" alt="" />
+              <img src="assets/img/gallery/6.jpeg" class="img-fluid gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="7" alt="" />
+            </div>
+            <div class="col-md-3 mt-3">
+              <img src="assets/img/gallery/7.jpg" class="img-fluid gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="8" alt="" />
+            </div>
+            <div class="col-md-3 mt-3">
+              <img src="assets/img/gallery/1.jpg" class="img-fluid mt-2 gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="1" alt="" />
+              <img src="assets/img/gallery/2.jpg" class="img-fluid gallery-thumb mt-3" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" data-index="4" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End contact section  -->
+
+  <footer class="footer-area pb-2" style="background-color: black !important">
+    <div class="d-flex gap-2">
+      <div>
+        <p class="description m-0 mt-3 text-center text-white">
+          We acknowledge the Traditional Owners of the many lands where we
+          live and work and pay our respects to Elders past, present and
+          emerging. We celebrate the stories, culture and traditions of
+          Aboriginal and Torres Strait Islander Elders of all communities from
+          the many lands where we live, work and gather.
+        </p>
+      </div>
+    </div>
+
+    <!---->
+    <div class="mt-3">
+      <div class="d-flex gap-2 align-items-center justify-content-center">
+        <div style="width: 40px">
+          <svg viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#aboriginal-flag_svg__clip0_1542_49709)">
+              <path d="M0 0h40.088v24H0V0z" fill="#000"></path>
+              <path d="M0 12h40.088v12H0V12z" fill="#C00"></path>
+              <path
+                d="M20.044 18c3.32 0 6.013-2.686 6.013-6s-2.692-6-6.013-6c-3.321 0-6.013 2.686-6.013 6s2.692 6 6.013 6z"
+                fill="#FF0"></path>
+            </g>
+            <defs>
+              <clipPath id="aboriginal-flag_svg__clip0_1542_49709">
+                <path fill="#fff" d="M0 0h40.088v24H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div style="width: 40px">
+          <svg viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#torres-strait-islanders-flag_svg__clip0_1542_49893)">
+              <path d="M36.119 19.8H0V24h36.119v-4.2zM36.119 0H0v4.2h36.119V0z" fill="#096"></path>
+              <path d="M36.119 4.2H0v1.2h36.119V4.2zM36.119 18.6H0v1.2h36.119v-1.2z" fill="#000"></path>
+              <path d="M36.119 5.4H0v13.2h36.119V5.4z" fill="#009"></path>
+              <path
+                d="M17.457 5.7c-6.02 1.8-5.718 6.3-3.792 10.44l-2.288 2.16 4.154-1.5v-5.52c1.324-1.98 3.732-1.98 5.057 0v5.52l4.153 1.5-2.287-2.16C24.38 12 24.68 7.5 18.66 5.7l-.602 2.58-.602-2.58z"
+                fill="#fff"></path>
+              <path
+                d="M20.347 11.823l-1.405 1.078.533 1.739-1.414-1.068-1.413 1.066.53-1.738-1.406-1.08 1.743-.006.543-1.734.547 1.735 1.742.008z"
+                fill="#fff"></path>
+            </g>
+            <defs>
+              <clipPath id="torres-strait-islanders-flag_svg__clip0_1542_49893">
+                <path fill="#fff" d="M0 0h36.119v24H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div class="bg-gray-3" style="background-color: black !important">
+      <div class="container">
+        <div class="footer-bottom copyright text-center bg-gray-3 font-weight-bold"
+          style="background-color: #000 !important">
+          <p class="description text-white mt-3">
+            Copyright ©2022 All rights reserved by
+            <a href="index.html" class="text-white description text-decoration-none">
+              Black Wealth Connect Pty Ltd.</a>&nbsp;| &nbsp;Design &amp; Developed By -
+            <a href="https://exoux.com/" class="text-decoration-none">Exoux Digital Solution</a>
           </p>
         </div>
       </div>
+    </div>
+  </footer>
 
-      <!---->
-      <div class="mt-3">
-        <div class="d-flex gap-2 align-items-center justify-content-center">
-          <div style="width: 40px">
-            <svg
-              viewBox="0 0 41 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#aboriginal-flag_svg__clip0_1542_49709)">
-                <path d="M0 0h40.088v24H0V0z" fill="#000"></path>
-                <path d="M0 12h40.088v12H0V12z" fill="#C00"></path>
-                <path
-                  d="M20.044 18c3.32 0 6.013-2.686 6.013-6s-2.692-6-6.013-6c-3.321 0-6.013 2.686-6.013 6s2.692 6 6.013 6z"
-                  fill="#FF0"
-                ></path>
-              </g>
-              <defs>
-                <clipPath id="aboriginal-flag_svg__clip0_1542_49709">
-                  <path fill="#fff" d="M0 0h40.088v24H0z"></path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div style="width: 40px">
-            <svg
-              viewBox="0 0 37 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#torres-strait-islanders-flag_svg__clip0_1542_49893)"
-              >
-                <path
-                  d="M36.119 19.8H0V24h36.119v-4.2zM36.119 0H0v4.2h36.119V0z"
-                  fill="#096"
-                ></path>
-                <path
-                  d="M36.119 4.2H0v1.2h36.119V4.2zM36.119 18.6H0v1.2h36.119v-1.2z"
-                  fill="#000"
-                ></path>
-                <path d="M36.119 5.4H0v13.2h36.119V5.4z" fill="#009"></path>
-                <path
-                  d="M17.457 5.7c-6.02 1.8-5.718 6.3-3.792 10.44l-2.288 2.16 4.154-1.5v-5.52c1.324-1.98 3.732-1.98 5.057 0v5.52l4.153 1.5-2.287-2.16C24.38 12 24.68 7.5 18.66 5.7l-.602 2.58-.602-2.58z"
-                  fill="#fff"
-                ></path>
-                <path
-                  d="M20.347 11.823l-1.405 1.078.533 1.739-1.414-1.068-1.413 1.066.53-1.738-1.406-1.08 1.743-.006.543-1.734.547 1.735 1.742.008z"
-                  fill="#fff"
-                ></path>
-              </g>
-              <defs>
-                <clipPath
-                  id="torres-strait-islanders-flag_svg__clip0_1542_49893"
-                >
-                  <path fill="#fff" d="M0 0h36.119v24H0z"></path>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
+  <!-- men Modal -->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pb-0 border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <!---->
-      <div class="bg-gray-3" style="background-color: black !important">
-        <div class="container">
-          <div
-            class="footer-bottom copyright text-center bg-gray-3 font-weight-bold"
-            style="background-color: #000 !important"
-          >
-            <p class="description text-white mt-3">
-              Copyright ©2022 All rights reserved by
-              <a
-                href="index.html"
-                class="text-white description text-decoration-none"
-              >
-                Black Wealth Connect Pty Ltd.</a
-              >&nbsp;| &nbsp;Design &amp; Developed By -
-              <a href="https://exoux.com/" class="text-decoration-none"
-                >Exoux Digital Solution</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- men Modal -->
-    <div
-      class="modal fade"
-      id="exampleModalToggle"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header pb-0 border-0">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body pt-0 product-detail">
-            <div class="row">
-              <div class="col-md-4">
-                <div
-                  class="single-team-wrap text-center rounded-circle"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-bs-target="#exampleModalToggle"
-                  data-bs-toggle="modal"
-                >
-                  <img
-                    src="assets/img/peson 14 (3).jpg"
-                    class="img-fluid rounded-circle team-bx"
-                    alt=""
-                  />
-                </div>
+        <div class="modal-body pt-0 product-detail">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="single-team-wrap text-center rounded-circle" data-aos="fade-up" data-aos-delay="200"
+                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                <img src="assets/img/peson 14 (3).jpg" class="img-fluid rounded-circle team-bx" alt="" />
               </div>
-              <div class="col-md-8 col-12 mt-3">
-                <div class="mb-3">
-                  <h4>YEMI PENN</h4>
-                  <h6>Curious Rebel</h6>
-                </div>
-                <p>
-                  <strong>Yemi Penn</strong> is a fearless businesswoman and
-                  thought leader on creating your own memo, meaning ‘she’ gets
-                  to write the script of her life and encourages others to do
-                  the same.
-                </p>
-
-                <p>
-                  An engineer by profession and entrepreneur by passion,
-                  <strong>Yemi Penn</strong> has run 3 successful businesses in
-                  the past. She is now researching the alchemy of transmuting
-                  pain to power with a strong desire to learn new ways of being
-                  whilst challenging the status quo. Yemi invites the collective
-                  to ignite their rebellious curiosity in all aspects of their
-                  life, sharing the tools to do just that.
-                </p>
-
-                <p>
-                  More recently, <strong>Yemi</strong> has added documentary
-                  producer to her repertoire as she shifts her core life’s
-                  purpose to raising the vibration of acknowledging and healing
-                  our individual and therefore collective trauma, something
-                  individuals, communities, and organisations alike have
-                  experienced over the past couple of years.
-                </p>
+            </div>
+            <div class="col-md-8 col-12 mt-3">
+              <div class="mb-3">
+                <h4>YEMI PENN</h4>
+                <h6>Curious Rebel</h6>
               </div>
+              <p>
+                <strong>Yemi Penn</strong> is a fearless businesswoman and
+                thought leader on creating your own memo, meaning ‘she’ gets
+                to write the script of her life and encourages others to do
+                the same.
+              </p>
+
+              <p>
+                An engineer by profession and entrepreneur by passion,
+                <strong>Yemi Penn</strong> has run 3 successful businesses in
+                the past. She is now researching the alchemy of transmuting
+                pain to power with a strong desire to learn new ways of being
+                whilst challenging the status quo. Yemi invites the collective
+                to ignite their rebellious curiosity in all aspects of their
+                life, sharing the tools to do just that.
+              </p>
+
+              <p>
+                More recently, <strong>Yemi</strong> has added documentary
+                producer to her repertoire as she shifts her core life’s
+                purpose to raising the vibration of acknowledging and healing
+                our individual and therefore collective trauma, something
+                individuals, communities, and organisations alike have
+                experienced over the past couple of years.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End men modal -->
+  </div>
+  <!-- End men modal -->
 
-    <!-- gallery modal start -->
-    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-fullscreen">
-        <div class="modal-content bg-dark text-white" style="opacity: 0.95">
-          <div
-            class="modal-body text-center position-relative p-0 d-flex align-items-center justify-content-center"
-          >
-            <button
-              type="button"
-              class="btn-close position-absolute top-0 end-0 m-3 btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+  <!-- gallery modal start -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+      <div class="modal-content bg-dark text-white" style="opacity: 0.95">
+        <div class="modal-body text-center position-relative p-0 d-flex align-items-center justify-content-center">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3 btn-close-white"
+            data-bs-dismiss="modal" aria-label="Close"></button>
 
-            <!-- Arrows -->
-            <button
-              class="btn btn-dark position-absolute top-50 start-0 translate-middle-y"
-              id="prevBtn"
-              style="z-index: 10"
-            >
-              &#8592;
-            </button>
-            <img
-              id="modalImage"
-              src=""
-              class="img-fluid"
-              style="max-height: 80vh"
-            />
-            <button
-              class="btn btn-dark position-absolute top-50 end-0 translate-middle-y"
-              id="nextBtn"
-              style="z-index: 10"
-            >
-              &#8594;
-            </button>
+          <!-- Arrows -->
+          <button class="btn btn-dark position-absolute top-50 start-0 translate-middle-y" id="prevBtn"
+            style="z-index: 10">
+            &#8592;
+          </button>
+          <img id="modalImage" src="" class="img-fluid" style="max-height: 80vh" />
+          <button class="btn btn-dark position-absolute top-50 end-0 translate-middle-y" id="nextBtn"
+            style="z-index: 10">
+            &#8594;
+          </button>
 
-            <!-- Counter -->
-            <div
-              class="position-absolute bottom-0 start-50 translate-middle-x pb-3"
-            >
-              <span id="imageCounter">1/30</span>
-            </div>
+          <!-- Counter -->
+          <div class="position-absolute bottom-0 start-50 translate-middle-x pb-3">
+            <span id="imageCounter">1/30</span>
           </div>
         </div>
       </div>
     </div>
-    <!-- end gallery modal -->
+  </div>
+  <!-- end gallery modal -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      const images = [
-        "assets/img/gallery/1.jpg",
-        "assets/img/gallery/2.jpg",
-        "assets/img/gallery/3.jpg",
-        "assets/img/gallery/4.jpg",
-        "assets/img/gallery/5.jpg",
-        "assets/img/gallery/6.jpeg",
-        "assets/img/gallery/7.jpg",
-      ];
+  <!-- cart offcanvas start -->
+  <div class="offcanvas offcanvas-end p-3 px-0 px-lg-4 p-lg-4 cart-offcanvas" data-bs-scroll="true" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header position-relative">
+      <!-- <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button> -->
+      <a class="cart-close px-3 py-2" data-bs-dismiss="offcanvas" aria-label="Close" href="#"><i
+          class="bi bi-x-lg text-white"></i></a>
+    </div>
+    <div class="offcanvas-body pt-5">
+      <div class="cart-content mt-5 px-0">
+        <ul>
+          <li>
+            <div class="cart-img">
+              <a href="#"><img src="assets/img/BWC !.jpg" alt="" /></a>
+            </div>
+            <div class="cart-title">
+              <h4 class="heading">
+                <a href="#" class="text-decoration-none">BLACK AND GREEN BWC HOODIE</a>
+                (S)
+              </h4>
+              <span> 1 × 80 </span>
+            </div>
+            <div class="cart-delete">
+              <a href="javascript:void(0)" onclick='removeCartItem("uId1")'><i class="bi bi-trash"></i></a>
+            </div>
+          </li>
+        </ul>
+        <div class="cart-total">
+          <h4>Subtotal: <span>$80</span></h4>
+        </div>
+        <div class="cart-btn btn-hover">
+          <a class="theme-color text-decoration-none" href="#">view cart</a>
+        </div>
+        <div class="checkout-btn btn-hover">
+          <a class="theme-color text-decoration-none" href="#">checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cart offcanvas end -->
 
-      let currentIndex = 0;
+  <!-- Header offcanvas start -->
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling2"
+    aria-labelledby="offcanvasScrollingLabel2" style="width: 15rem;">
+    <div class="offcanvas-header position-relative">
+      <!-- <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button> -->
+      <a class="cancel-btn btn-dark px-3 py-2" data-bs-dismiss="offcanvas" aria-label="Close" href="#"><i
+          class="bi bi-x-lg text-white"></i></a>
+    </div>
+    <div class="offcanvas-body pt-2">
+      <ul class="navbar-nav ms-auto d-flex align-items-start align-items-lg-center">
+        <li class="nav-item d-lg-none d-block">
+          <a class="nav-link" href="index.html">PODCAST</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="events.html">EVENTS</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="store.html">STORE</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="men-signup.html">MEMBERSHIP</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Header offcanvas end -->
 
-      function updateModalImage(index) {
-        const modalImage = document.getElementById("modalImage");
-        modalImage.src = images[index];
-        document.getElementById("imageCounter").textContent = `${index + 1}/${
-          images.length
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    const images = [
+      "assets/img/gallery/1.jpg",
+      "assets/img/gallery/2.jpg",
+      "assets/img/gallery/3.jpg",
+      "assets/img/gallery/4.jpg",
+      "assets/img/gallery/5.jpg",
+      "assets/img/gallery/6.jpeg",
+      "assets/img/gallery/7.jpg",
+    ];
+
+    let currentIndex = 0;
+
+    function updateModalImage(index) {
+      const modalImage = document.getElementById("modalImage");
+      modalImage.src = images[index];
+      document.getElementById("imageCounter").textContent = `${index + 1}/${images.length
         }`;
+    }
+
+    document.querySelectorAll(".gallery-thumb").forEach((img) => {
+      img.addEventListener("click", (e) => {
+        currentIndex = parseInt(e.target.getAttribute("data-index"));
+        updateModalImage(currentIndex);
+      });
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateModalImage(currentIndex);
       }
+    });
 
-      document.querySelectorAll(".gallery-thumb").forEach((img) => {
-        img.addEventListener("click", (e) => {
-          currentIndex = parseInt(e.target.getAttribute("data-index"));
-          updateModalImage(currentIndex);
-        });
-      });
+    document.getElementById("nextBtn").addEventListener("click", () => {
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        updateModalImage(currentIndex);
+      }
+    });
+  </script>
+</body>
 
-      document.getElementById("prevBtn").addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          updateModalImage(currentIndex);
-        }
-      });
-
-      document.getElementById("nextBtn").addEventListener("click", () => {
-        if (currentIndex < images.length - 1) {
-          currentIndex++;
-          updateModalImage(currentIndex);
-        }
-      });
-    </script>
-  </body>
 </html>
